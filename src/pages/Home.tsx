@@ -28,11 +28,7 @@ export default function Home() {
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.6, delay: 0.1 }}
         >
-          <img
-            className="hero-img"
-            src={`${import.meta.env.BASE_URL}PhotoOfMe.jpg`}
-            alt="Umar Turdumambetov"
-          />
+          const hero = `${import.meta.env.BASE_URL}PhotoOfMe.jpg`;
         </motion.div>
       </div>
     </section>
