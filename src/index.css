@@ -198,9 +198,18 @@ button{cursor:pointer}
 }
 
 .hero-photo {
-  flex: 1;
-  display: flex;
-  justify-content: center;
+  width: min(35vw, 420px);
+  height: min(70vh, 570px);
+  object-fit: cover;
+  object-position: center 10%;
+  border-radius: 18px;
+}
+
+@media (max-width: 768px) {
+  .hero-photo {
+    width: 80vw;
+    height: 60vh;
+  }
 }
 
 .hero-img {
