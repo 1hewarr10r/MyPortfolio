@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import { PROJECTS } from "../data/projects";
 
 export default function Projects() {
-  const items = PROJECTS.slice(0, 2);
+  const items = PROJECTS;
 
   return (
     <section className="container" style={{ paddingTop: 18, paddingBottom: 18 }}>
@@ -11,7 +11,7 @@ export default function Projects() {
           const cover = p.images?.[0];
 
           return (
-            <article key={p.id} className="project-card">
+            <article key={p.id} className={`project-card ${p.id}`}>
               <div
                 className="project-bg"
                 style={{

@@ -241,10 +241,10 @@ button{cursor:pointer}
 }
 /* ===== Projects (two big hero cards) ===== */
 .projects-viewport{
-  min-height: 100vh;              /* the whole page */
+  min-height: 100vh;
   display: grid;
-  grid-template-rows: 1fr 1fr;    /* two rows, each half the screen */
   gap: 14px;
+  grid-auto-rows: minmax(320px, 1fr);  
 }
 
 .project-card{
@@ -290,11 +290,10 @@ button{cursor:pointer}
   display:flex; gap:10px; flex-wrap:wrap;
 }
 
-/* Mobile: stack into one column (scroll) */
+/* Mobile */
 @media (max-width: 900px){
   .projects-viewport{
-    grid-template-rows: none;
-    grid-auto-rows: 60vh;         /* each card ~60% of screen */
+    grid-auto-rows: 60vh;  
   }
 }
 /* ===== Experience ===== */
@@ -303,7 +302,7 @@ button{cursor:pointer}
   gap: 16px;
   margin-top: 12px;
 }
-
+ 
 .exp-item{
   position: relative;
   overflow: hidden;
@@ -422,4 +421,10 @@ button{cursor:pointer}
   background: rgba(37, 99, 235, 0.15);
   border-color: rgba(37, 99, 235, 0.35);
   transform: translateY(-3px);
+}
+
+/* Make the PolyPredictor-Kit blurb white */
+.project-card.polypredictor-kit .project-blurb {
+  color: #ffffff !important;
+  opacity: 1;
 }

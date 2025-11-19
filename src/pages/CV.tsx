@@ -1,7 +1,7 @@
 import { LINKS } from "../data/projects";
 
 export default function Resume() {
-  const pdfUrl = `${import.meta.env.BASE_URL}UmarTurdumambetov_CV.pdf`;
+  const pdfUrl = `${import.meta.env.BASE_URL}Umar_Turdumambetov_Resume.pdf`;
 
   return (
     <section className="container section">
