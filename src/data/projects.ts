@@ -30,19 +30,6 @@ export const PROJECTS: Project[] = [
     images: [IMG("PolyPredictor-Kit", "PolyPredictor-Kit.jpg")],
   },
   {
-    id: "car-estimator",
-    title: "Car Price Estimator",
-    blurb:
-      "This ML model estimates a car's value based on its attributes (Year, Mileage, Make, etc.).",
-    highlight: "My first ML project",
-    links: { more: "https://github.com/1hewarr10r/Car_Price_Estimator" },
-    images: [
-      IMG("CarPriceEstimator", "1.jpg"),
-      IMG("CarPriceEstimator", "2.jpg"),
-      IMG("CarPriceEstimator", "3.jpg"),
-    ],
-  },
-  {
     id: "visual-novel-creator",
     title: "Visual Novel Creator",
     blurb:
@@ -55,6 +42,19 @@ export const PROJECTS: Project[] = [
       IMG("VisualNovelCreator", "1.jpg"),
       IMG("VisualNovelCreator", "2.jpg"),
       IMG("VisualNovelCreator", "3.jpg"),
+    ],
+  },
+   {
+    id: "car-estimator",
+    title: "Car Price Estimator",
+    blurb:
+      "This ML model estimates a car's value based on its attributes (Year, Mileage, Make, etc.).",
+    highlight: "My first ML project",
+    links: { more: "https://github.com/1hewarr10r/Car_Price_Estimator" },
+    images: [
+      IMG("CarPriceEstimator", "1.jpg"),
+      IMG("CarPriceEstimator", "2.jpg"),
+      IMG("CarPriceEstimator", "3.jpg"),
     ],
   },
 ];
