@@ -22,7 +22,7 @@ export const PROJECTS: Project[] = [
   {
     id: "polypredictor-kit",
     title: "PolyPredictor-Kit",
-    blurb: "🥇 QuackHacks 2025 Polymarket Track Winner — PolyPredictor-Kit",
+    blurb: "🥇 QuackHacks 2025 Polymarket Track 1st place — PolyPredictor-Kit",
     links: {
       repo: "https://devpost.com/software/poly-predictor-kit?ref_content=user-portfolio&ref_feature=in_progress",
     },
@@ -41,7 +41,7 @@ export const PROJECTS: Project[] = [
     id: "visual-novel-creator",
     title: "Visual Novel Creator",
     blurb:
-      "🥇CodeDay 2025 Winner — AI Visual Novel Creator",
+      "🥇CodeDay 2025 1st place — AI Visual Novel Creator",
     highlight:
       "An end-to-end AI visual novel generator built with Gemini, Stability AI, and Ren’Py. The system creates full narratives, character art, and scene images automatically, then compiles them into Ren'Py scripts with transitions, scaling logic, and preloaded assets. This taught our team how to combine AI pipelines with a real game engine.",
     links: {
