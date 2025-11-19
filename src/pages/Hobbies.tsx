@@ -1,45 +1,32 @@
 export default function Hobbies() {
+  const img = (name: string) =>
+    `${import.meta.env.BASE_URL}projects/hobbies/${name}.jpg`;
+
   const hobbies = [
-    {
-      title: "Music",
+    { title: "Music",
       desc: "Rock & vibe music — The Neighbourhood, Chase Atlantic, Green Day, Linkin Park.",
-      img: "./public/projects/hobbies/music.jpg",
-    },
-    {
-      title: "Martial Arts",
+      key: "music" },
+    { title: "Martial Arts",
       desc: "Used to do kickboxing, boxing, wrestling, judo, MMA — discipline and focus.",
-      img: "./public/projects/hobbies/martial.jpg",
-    },
-    {
-      title: "Cycling",
+      key: "martial" },
+    { title: "Cycling",
       desc: "Prefer biking over buses — freedom and clarity on the road.",
-      img: "./public/projects/hobbies/cycling.jpg",
-    },
-    {
-      title: "Soccer",
-      desc: "Used to play a lot — love the teamwork and energy, almost went professional. Was playiing as a Striker for soccer club in Kyrgyzstan.",
-      img: "./public/projects/hobbies/soccer.jpg",
-    },
-    {
-      title: "Movies",
+      key: "cycling" },
+    { title: "Soccer",
+      desc: "Used to play a lot — love the teamwork and energy, almost went professional. Was playing as a Striker in Kyrgyzstan.",
+      key: "soccer" },
+    { title: "Movies",
       desc: "Psychological thrillers like *Fight Club* and *Shutter Island*.",
-      img: "./public/projects/hobbies/movies.jpg",
-    },
-    {
-      title: "Cars",
-      desc: "Love muscle and supercars — favorite and goal cars are *Mclaren P1* and *Lexus LC500*",
-      img: "./public/projects/hobbies/cars.jpg",
-    },
-    {
-      title: "Tech Exploration",
+      key: "movies" },
+    { title: "Cars",
+      desc: "Love muscle and supercars — favorite and goal cars are *McLaren P1* and *Lexus LC500*.",
+      key: "cars" },
+    { title: "Tech Exploration",
       desc: "Exploring AI, wearables, and new tech tools like Whoop.",
-      img: "./public/projects/hobbies/tech.jpg",
-    },
-    {
-      title: "Video Games",
-      desc: "Soulslike and open-world games — *Elden Ring* and *Skyrim*.",
-      img: "./public/projects/hobbies/gaming.jpg",
-    },
+      key: "tech" },
+    { title: "Video Games",
+      desc: "Soulslike and open-world — *Elden Ring* and *Skyrim*.",
+      key: "gaming" },
   ];
 
   return (
@@ -50,8 +37,10 @@ export default function Hobbies() {
           <div key={i} className="card hobby-card">
             <div
               className="hobby-photo"
-              style={{ backgroundImage: `url(${h.img})` }}
-            ></div>
+              style={{ backgroundImage: `url('${img(h.key)}')` }}
+              aria-label={h.title}
+              role="img"
+            />
             <div className="hobby-info">
               <h3>{h.title}</h3>
               <p className="muted">{h.desc}</p>

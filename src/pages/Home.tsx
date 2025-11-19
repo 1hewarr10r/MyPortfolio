@@ -3,6 +3,9 @@ import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 
 export default function Home() {
+  // ✅ Correct path for images in the public folder
+  const hero = `${import.meta.env.BASE_URL}PhotoOfMe.jpg`;
+
   return (
     <section className="hero-full">
       <div className="hero-content">
@@ -17,19 +20,24 @@ export default function Home() {
             Software Engineer & Machine Learning Enthusiast — Based in Seattle
           </p>
           <div className="hero-buttons">
-            <Link to="/contact" className="btn outline">Contact Me</Link>
-            <Link to="/projects" className="btn primary">See My Work</Link>
+            <Link to="/contact" className="btn outline">
+              Contact Me
+            </Link>
+            <Link to="/projects" className="btn primary">
+              See My Work
+            </Link>
           </div>
         </motion.div>
 
-        <motion.div
-          className="hero-photo"
-          initial={{ opacity: 0, scale: 0.98 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.6, delay: 0.1 }}
-        >
-          const hero = `${import.meta.env.BASE_URL}PhotoOfMe.jpg`;
-        </motion.div>
+        {/* ✅ Hero photo from public folder */}
+        <motion.img
+  src={hero}
+  alt="Umar Turdumambetov"
+  className="hero-photo"
+  initial={{ opacity: 0, scale: 0.98 }}
+  animate={{ opacity: 1, scale: 1 }}
+  transition={{ duration: 0.6, delay: 0.1 }}
+/>
       </div>
     </section>
   );
